@@ -1,0 +1,201 @@
+.nav-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 54px;
+    background-color: $secondary_color;
+    @media screen and (max-width: $Desktop_screen) {
+        padding: 0 20px;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: $inner_width;
+        @media screen and (max-width: $Desktop_screen) {
+            width: $fablet_inner_width;
+        }
+        .hambuger_btn {
+            display: none;
+            position: relative;
+            z-index: 9999;
+            display: none;
+            width: max-content;
+            height: max-content;
+            padding: 5px;
+            background-color: blue;
+            span {
+                margin: 3px 0;
+                display: block;
+                width: 22px;
+                border-radius: 9px;
+                height: 3px;
+                background-color: black;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                transition: all .4s ease;
+            }
+            @media screen and (max-width: $small_screen) {
+                display: block;
+            }
+        }
+        .logo_container {
+            position: relative;
+            z-index: 9999;
+            width: 150px;
+            @media screen and (max-width: $small_screen) {
+                width: 100px;
+            }
+            a {
+                cursor: pointer;
+                margin: auto 0;
+                .logo {
+                    width: 100%;
+                }
+            }
+        }
+        .nav_items_container {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            position: relative;
+            @media screen and (max-width: $small_screen) {
+                position: fixed;
+                width: 40%;
+                right: -40%;
+                bottom: 0;
+                padding-top: 10%;
+                height: 100%;
+                background-color: $secondary_color;
+                flex-direction: column;
+                transition: right .7s ease;
+                .nav_main_items {
+                    // position: absolute;
+                    flex-direction: column;
+                }
+            }
+            @media screen and (max-width: $mobile_screen) {
+                width: 100%;
+                right: -100%;
+                padding-top: 22%;
+            }
+            .nav_main_items {
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                @media screen and (max-width: $small_screen) {
+                    height: fit-content;
+                }
+                .nav_link {
+                    transition: all .7s ease;
+                    padding: 0 5px;
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $small_screen) {
+                        height: fit-content;
+                    }
+                    a {
+                        cursor: pointer;
+                        transition: all .7s ease;
+                        padding: 5px 8px;
+                        width: 100%;
+                        color: $text_dark;
+                    }
+                    @media screen and (min-width: $small_screen) {
+                        & :hover {
+                            background-color: $color_dark;
+                            a {
+                                color: $text_light;
+                            }
+                            .nav_sub_menu {
+                                transition: all 2s ease;
+                                position: absolute;
+                                display: flex;
+                                width: max-content;
+                                top: 54px;
+                                left: 0;
+                                background-color: $secondary_color;
+                            }
+                        }
+                    }
+                    .nav_sub_menu {
+                        display: none;
+                        transition: all 2s ease;
+                        flex-direction: column;
+                        .nav_link {
+                            a {
+                                display: block;
+                                padding: .3rem 1rem;
+                            }
+                        }
+                    }
+                }
+                .has_sub_menu {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    @media screen and (max-width: $small_screen) {
+                        height: fit-content;
+                    }
+                    &::after {
+                        transition: all .7s ease;
+                        color: $color_dark;
+                        display: block;
+                        position: relative;
+                        margin-top: -2px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        font: var(--fa-font-solid);
+                        content: "\f054";
+                    }
+                    @media screen and (min-width: $small_screen) {
+                        &:hover {
+                            &::after {
+                                color: $color_light;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .nav_unique_item {
+                margin-left: 10px;
+                @media screen and (max-width: $small_screen) {
+                    margin: 10px 0;
+                }
+                a {
+                    cursor: pointer;
+                    padding: 5px 8px;
+                    background-color: $primary_color;
+                    color: $text_light;
+                }
+            }
+        }
+    }
+    .nav_active {
+        .nav_items_container {
+            right: 0;
+            @media screen and (max-width: $mobile_screen) {
+                right: 0%;
+            }
+        }
+        .hambuger_btn {
+            span {
+                &:first-of-type {
+                    transform: rotate(40deg) translate(4px, 5px);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    transform: translate(5px);
+                }
+                &:last-of-type {
+                    transform: rotate(-42deg) translate(4px, -4px);
+                }
+            }
+        }
+    }
+}

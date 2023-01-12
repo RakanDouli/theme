@@ -1,0 +1,16 @@
+.outter_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: $outter_padding;
+    @media screen and (max-width: $Desktop_screen) {
+        padding: $fablet_outter_padding;
+    }
+    .inner_wrapper {
+        width: $inner_width;
+        @media screen and (max-width: $Desktop_screen) {
+            width: $fablet_inner_width;
+        }
+    }
+}

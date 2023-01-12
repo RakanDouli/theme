@@ -1,0 +1,69 @@
+// =================
+// Color 
+$primary_color:rgb(0, 186, 239);
+$secondary_color: rgb(242, 193, 58);
+$text_dark:black;
+$text_light:white;
+$color_light:white;
+$color_dark:black;
+$modalBG_color:rgba(0, 0, 0, .3);
+// big screen
+$outter_padding:20px 0px;
+$inner_width: 1200px;
+// fablet
+$fablet_outter_padding: 20px;
+$fablet_inner_width: 100vw;
+// mediaquery:
+$mobile_screen:480px;
+$tablet_screen:768px;
+$small_screen:1024px;
+$Desktop_screen:1200px;
+$xl_screen:1201px;
+// Fonts
+$primary_font:'Overpass',
+sans-serif;
+// =================
+// theme Style 
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $primary_font;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.outter_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: $outter_padding;
+    @media screen and (max-width: $Desktop_screen) {
+        padding: $fablet_outter_padding;
+    }
+}
+
+.inner_wrapper {
+    width: $inner_width;
+    @media screen and (max-width: $Desktop_screen) {
+        width: $fablet_inner_width;
+    }
+}
