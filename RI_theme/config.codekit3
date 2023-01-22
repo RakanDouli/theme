@@ -9,7 +9,7 @@
   ],
   "creatorBuild" : "34434",
   "files" : {
-    "\/RI_theme\/assests\/styles\/footer.scss" : {
+    "\/assests\/styles\/footer.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -18,13 +18,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RI_theme\/assests\/styles\/footer.css",
+      "oAP" : "\/assests\/styles\/footer.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RI_theme\/assests\/styles\/main.css" : {
+    "\/assests\/styles\/main.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -32,11 +32,11 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/RI_theme\/assests\/styles\/main-min.css",
+      "oAP" : "\/assests\/styles\/main-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/RI_theme\/assests\/styles\/main.scss" : {
+    "\/assests\/styles\/main.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -45,13 +45,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/RI_theme\/assests\/styles\/main.css",
+      "oAP" : "\/assests\/styles\/main.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RI_theme\/assests\/styles\/nav.scss" : {
+    "\/assests\/styles\/nav.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -60,13 +60,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RI_theme\/assests\/styles\/nav.css",
+      "oAP" : "\/assests\/styles\/nav.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RI_theme\/assests\/styles\/Theme.scss" : {
+    "\/assests\/styles\/Theme.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -75,13 +75,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RI_theme\/assests\/styles\/Theme.css",
+      "oAP" : "\/assests\/styles\/Theme.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RI_theme\/assests\/styles\/wrapper.scss" : {
+    "\/assests\/styles\/wrapper.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -90,38 +90,38 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/RI_theme\/assests\/styles\/wrapper.css",
+      "oAP" : "\/assests\/styles\/wrapper.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/RI_theme\/index.html" : {
+    "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/RI_theme\/index.html",
+      "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/RI_theme\/js\/index-min.js" : {
+    "\/js\/index-min.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/RI_theme\/js\/index-min-min.js",
+      "oAP" : "\/js\/index-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
-    "\/RI_theme\/js\/index.js" : {
+    "\/js\/index.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/RI_theme\/js\/index-min.js",
+      "oAP" : "\/js\/index-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
