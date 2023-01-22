@@ -94,6 +94,7 @@
                     position: relative;
                     height: 100%;
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
                     @media screen and (max-width: $small_screen) {
                         height: fit-content;
@@ -105,28 +106,15 @@
                         width: 100%;
                         color: $text_dark;
                     }
-                    @media screen and (min-width: $small_screen) {
-                        & :hover {
-                            background-color: $color_dark;
-                            a {
-                                color: $text_light;
-                            }
-                            .nav_sub_menu {
-                                transition: all 2s ease;
-                                position: absolute;
-                                display: flex;
-                                width: max-content;
-                                top: 54px;
-                                left: 0;
-                                background-color: $secondary_color;
-                            }
-                        }
-                    }
                     .nav_sub_menu {
-                        display: none;
+                        display: flex;
+                        background-color: red;
                         transition: all 2s ease;
                         flex-direction: column;
                         .nav_link {
+                            // background-color: blanchedalmond;
+                            width: max-content;
+                            height: 100%;
                             a {
                                 display: block;
                                 padding: .3rem 1rem;
@@ -153,7 +141,7 @@
                         content: "\f054";
                     }
                     @media screen and (min-width: $small_screen) {
-                        &:hover {
+                        >&:hover {
                             &::after {
                                 color: $color_light;
                                 transform: rotate(90deg);

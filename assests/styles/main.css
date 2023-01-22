@@ -159,6 +159,7 @@ body {
   position: relative;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 @media screen and (max-width: 1024px) {
@@ -173,27 +174,15 @@ body {
   width: 100%;
   color: black;
 }
-@media screen and (min-width: 1024px) {
-  .nav-container .nav .nav_items_container .nav_main_items .nav_link :hover {
-    background-color: black;
-  }
-  .nav-container .nav .nav_items_container .nav_main_items .nav_link :hover a {
-    color: white;
-  }
-  .nav-container .nav .nav_items_container .nav_main_items .nav_link :hover .nav_sub_menu {
-    transition: all 2s ease;
-    position: absolute;
-    display: flex;
-    width: max-content;
-    top: 54px;
-    left: 0;
-    background-color: rgb(242, 193, 58);
-  }
-}
 .nav-container .nav .nav_items_container .nav_main_items .nav_link .nav_sub_menu {
-  display: none;
+  display: flex;
+  background-color: red;
   transition: all 2s ease;
   flex-direction: column;
+}
+.nav-container .nav .nav_items_container .nav_main_items .nav_link .nav_sub_menu .nav_link {
+  width: max-content;
+  height: 100%;
 }
 .nav-container .nav .nav_items_container .nav_main_items .nav_link .nav_sub_menu .nav_link a {
   display: block;
